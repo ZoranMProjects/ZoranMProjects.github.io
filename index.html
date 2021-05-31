@@ -6,9 +6,7 @@
     <!-- <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.79.0"> -->
-    <title>MyWebsite</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cheatsheet/">
+    <title>Portfolio - Zoran Marjanovic</title>
 
     <!-- Bootstrap core CSS -->
 <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +33,7 @@
       <li class="my-2">
         <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Projects</button>
         <ul class="list-unstyled ps-3 collapse" id="contents-collapse">
-          <li><a class="d-inline-flex align-items-center rounded" href="#introduction">Introduction</a></li>
+          <!-- <li><a class="d-inline-flex align-items-center rounded" href="#introduction">Introduction</a></li> -->
           <li><a class="d-inline-flex align-items-center rounded" href="#my_projects">My Projects</a></li>
   
         </ul>
@@ -52,18 +50,19 @@
 </aside>
 
 <div class="bd-cheatsheet container-fluid bg-white">
+
   <section id="content">
     <h2 class="sticky-xl-top fw-bold pt-5 pt-xl-5 pb-5 pb-xl-5">Projects</h2>
 
     <article class="my-3" id="introduction">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-        <h3>Introduction</h3>
+        <h3></h3>
       </div>
 
       <div>
         <div class="bd-example">
-        <p class="display-1">Welcome</p>
-        <h5></h5>
+        <p class="display-1 fw-bold">My Portfolio</p>
+
     </article>
 
     <article class="my-3" id="my_projects">
@@ -73,9 +72,13 @@
 
       <div>
         <div>
+         <img src="assets/brand/FirstIteration.gif" width="800" height="400" class="me-3" alt="Bootstrap">
+         <img src="assets/brand/FirstArt.gif" width="800" height="400" class="me-3" alt="Bootstrap">
          <img src="assets/brand/BoomerangBotGif1.gif" width="800" height="400" class="me-3" alt="Bootstrap">
          <img src="assets/brand/BoomerangBotGif2.gif" width="800" height="400" class="me-3" alt="Bootstrap">
-        <p class="pt-4 pb-4 mb-4">Made in a "Gamejam" in 72 hours</p>
+         
+        <p class="pt-4 pb-4 mb-4">Starting games is easy, finishing them... not so much.  <br >
+          In this 72-hour GameJam I planned, prototyped, made the Art and the Levels (with questionable Level Design) for my first fully finished Game.</p>
          <button type="button" class="btn btn-primary btn-lg" onclick="window.open('https://zok1.itch.io/boomerangbot')">Try it yourself</button>
          <script>
              function relocate_home(){
@@ -88,18 +91,24 @@
         <div>
           <img src="assets/brand/HandyGame1.gif" width="250" height="400" class="me-3" alt="Bootstrap">
           <img src="assets/brand/HandyGame2.gif" width="250" height="400" class="me-3" alt="Bootstrap">
-          <p class="pt-4 pb-4 mb-4 border-bottom">Smartphone based Controls</p>
+          <p class="pt-4 pb-4 mb-4 border-bottom"> Mobile Games are an always growing market, which is why I tried to make one myself. <br>
+          A simple gameplay-loop and a responsive controller make for a relatively fun Game, which I plan on continuing to develop. <br>
+           </p>
     
         </div>
 
         <div>
           <img src="assets/brand/EndlessRunnerTest.gif" width="400 " height="200" class="me-3" alt="Bootstrap">
-          <p class="pt-4 pb-4 mb-4 border-bottom">Physics based System Test</p>
+          <img src="assets/brand/RunningTemplate2.gif" width="400 " height="200" class="me-3" alt="Bootstrap">
+          <p class="pt-4 pb-4 mb-4 border-bottom">One of the most popular Genres when it comes to Mobile Games are Endless-Runners. So I made one. <br>
+          It's not much, but a simple repeating terrain- and target-generation and statisfying shooting mechanic did the trick. <br>
+          (the running animation sadly didnt make the cut)</p>
         </div>
         <div>
           <img src="assets/brand/Minesweeper2D.gif" width="400 " height="200" class="me-3" alt="Bootstrap">
           <img src="assets/brand/Minesweeper3D.gif" width="400 " height="200" class="me-3" alt="Bootstrap">
-          <p class="pt-4 pb-4 mb-4 border-bottom">Minesweeper Projects</p>
+          <p class="pt-4 pb-4 mb-4 border-bottom">I was always a big fan of Puzzle Games. <br> 
+            Trying to figure out and recreate the mechanics of a game I play nearly daily to this day, is as much fun as playing the game itself.  </p>
         </div>
         
       </div>
@@ -116,9 +125,11 @@
 
       <div>
         <p>
-         I'm in no way a Game Developer, but especially in the hard times Like today, its difficult to start bigger Projects with other People.
-        So Game Developement catches my interests, as it is easy to start a project on your own at home.
-        I love making new games, mostly little "Demos", because I love the "Problem solving" aspect of Programming, as every Game has a different approach.</p>
+          I'm in no way a Game Developer, but especially in the hard times Like today, its difficult to start bigger Projects with other People.
+          So Game Developement catches my interests, as it is easy to start a project on your own at home. I love making new games, mostly little "Demos", 
+          because I love the "Problem solving" aspect of Programming, as every Game has a different approach.
+      
+      </p>
       </div>
         
     
@@ -132,7 +143,7 @@
         <div>
           <p>       
           Besides that, I always try to learn new Technologies. 
-          I started learning HTML/CSS (Bootstrap5) to make this Portfolio and I am working on the Backend of a Webshop with ShopWare5.</p>
+          I started learning HTML/CSS (Bootstrap5) to make this Portfolio and I am working on the Backend of a Webshop (coming soon) with ShopWare5.</p>
         </div>
           
         </div>
@@ -143,5 +154,6 @@
 </div>
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="cheatsheet.js"></script>
+
   </body>
 </html>

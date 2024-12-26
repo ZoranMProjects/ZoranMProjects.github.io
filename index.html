@@ -1,171 +1,241 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <title>Zoran Marjanovic - My Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Zoran Marjanovic" />
-  <meta name="description" content="Zoran Marjanovic Portfolio" />
-  <meta name="title" property="og:title" content="Portfolio" />
-  <meta property="og:type" content="Website" />
-  <meta name="image" property="og:image" content="https://i.postimg.cc/Cx9BXzdt/Boomerang-Bot-Gif1.gif" />
-  <meta name="description" property="og:description" content="My 72-Hour GameJam Project" />
-  <title>Portfolio - Zoran Marjanovic</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link href="stylesheet.css" rel="stylesheet">
 </head>
 
-<body class="bg-light">
+<body>
+<div class="container-fluid pt-2 pb-2 bg-dark text-white">
+  <div class="d-flex align-items-center">
+    <img src="assets/brand/bootstrap-logo-white.svg" width="38" height="30" class="me-3" alt="Bootstrap">
+    <h2 class="mb-0">Zoran Marjanovic - My Portfolio</h2>
+  </div>
+</div>
 
-  <header class="bd-header bg-dark py-3 d-flex">
-    <div class="container-fluid d-flex align-items-center">
-      <h1 class="d-flex align-items-center fs-4 text-white mb-0">
-        <img src="assets/brand/bootstrap-logo-white.svg" width="38" height="30" class="me-3" alt="Bootstrap">
-        Zoran Marjanovic
-      </h1>
-    </div>
-  </header>
-
-  <aside class="bd-aside sticky-xl-top text-muted mb-4 mb-xl-4 px-2">
-    <h2 class="h6 pt-4 pb-3 mb-4 border-bottom">Overview</h2>
-    <nav class="small" id="toc">
-      <ul class="list-unstyled">
-        <li class="my-2">
-          <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false"
-            data-bs-target="#projects-collapse" aria-controls="projects-collapse">Projects</button>
-          <ul class="list-unstyled ps-3 collapse" id="projects-collapse">
-            <li><a class="d-inline-flex align-items-center rounded" href="#game_development">Game Development</a></li>
-            <li><a class="d-inline-flex align-items-center rounded" href="#3d_printing">3D Printing and CAD Design</a></li>
-			<li><a class="d-inline-flex align-items-center rounded" href="#other">Other</a></li>
-          </ul>
-        </li>
-        <li class="my-2">
-          <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false"
-            data-bs-target="#about-me-collapse" aria-controls="about-me-collapse">About Me</button>
-          <ul class="list-unstyled ps-3 collapse" id="about-me-collapse">
-            <li><a class="d-inline-flex align-items-center rounded" href="#my_life">My Life</a></li>
-            <li><a class="d-inline-flex align-items-center rounded" href="#other">Other</a></li>
-          </ul>
-        </li>
+<div class="container-fluid">
+  <div class="row">
+    <!-- Left Column (Responsive Behavior) -->
+    <div class="col-12 col-md-4 col-lg-3 bg-light clickable-content p-3 sticky-sidebar" id="nav-column">
+      <h5 class="pb-3 mb-3 border-bottom overview-color-neutral d-md-block d-none">Overview</h5>
+      <ul class="list-unstyled d-flex d-md-block justify-content-around flex-wrap">
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
-  </aside>
+    </div>
 
-  <div class="bd-cheatsheet container-fluid bg-white">
-    <article class="my-3" id="introduction">
-      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-      </div>
-      <p class="display-3 fw-bold">My Portfolio</p>
-    </article>
+    <!-- Main Content -->
+    <div class="col-12 col-md-8 col-lg-9 p-3">
+      <section id="about-me" class="mb-5">
+        <h2>About Me</h2>
+        <p>Hello! I'm Zoran Marjanovic, and this is my portfolio. I enjoy working on technical projects and learning new skills.</p>
+      </section>
 
-    <section id="content">
-      <h2 class="sticky-xl-top fw-bold pt-5 pt-xl-5 pb-5 pb-xl-5">Projects</h2>
+      <section id="projects" class="mb-5">
+        <h2>Projects</h2>
+        <ul>
+          <li>
+			<strong>Portfolio Website</strong>:
+			<p>I started building this portfolio website to showcase my skills, projects, and growth as a developer. <br>
+				As I continue working on this site, I aim to implement more advanced features over time. <br>
+				This project not only serves as a personal portfolio but also as a learning platform, where I can experiment with new web technologies and improve my coding skills over time.<br>
+				</p>
+				
+			<p>I am utilizing <strong>Bootstrap</strong> for this website because it is easy to use and helps create visually appealing designs 
+			quickly. It provides a variety of pre-built components and responsive layouts. You can find more information about Bootstrap <a href="https://getbootstrap.com/" target="_blank">here</a>.</p>
+		  </li>
+          <li>
+			<strong>Kotlin Multi-Platform App</strong>
+			<p>I am currently building my own calendar app. Since I use an iOS device but want to learn Kotlin, I decided to explore Kotlin Multi-Platform to create a cross-platform app that works seamlessly on 
+			both iOS and Android. This approach not only helps me learn Kotlin but also enables code reuse, making the development process more efficient.
+			<p></p>
+			Through this project, I aim to deepen my understanding of Kotlin Multi-Platform while tackling real-world challenges like platform-specific customizations and integration with native features. 
+			Additionally, I plan to learn the process of publishing an app on both the Apple App Store and Google Play Store.
+			</p>
+		  </li>
+          <li>
+			<strong> 3D-Printed Designs</strong>
+			<p>Around a year ago, I discovered 3D printing for myself and quickly became fascinated with its endless possibilities. Now, I’m diving into CAD software to design 
+			solutions for problems around my apartment. Stay tuned for my first models to be published <a href="https://www.printables.com/@ZoranMarjano_1938622" target="_blank"> on my Printables Page</a>.
+			<p></p>
+            Currently, the page is as empty - but not for long! My creations are on their way, so check back soon for some truly mildly interesting 3D-models :) 
+			</p>
+		  </li>
+        </ul>
+      </section>
 
-      <!-- Game Development Projects Section -->
-      <article class="my-3" id="game_development">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-          <h3>Game Development</h3>
-        </div>
-
-        <div>
-          <div>
-            <img src="assets/brand/FirstIteration.gif" width="600" height="300" class="me-3" alt="Bootstrap">
-            <img src="assets/brand/FirstArt.gif" width="600" height="300" class="me-3" alt="Bootstrap">
-            <img src="assets/brand/BoomerangBotGif1.gif" width="600" height="300" class="me-3" alt="Bootstrap">
-            <img src="assets/brand/BoomerangBotGif2.gif" width="600" height="300" class="me-3" alt="Bootstrap">
-
-            <p class="pt-4 pb-4 mb-4">Starting games is easy, finishing them... not so much. <br>
-              In this 72-hour GameJam I planned, prototyped, programmed, made the Art and the Levels (with questionable Level
-              Design) for my first fully finished Game.</p>
-            <button type="button" class="btn btn-primary btn-lg" onclick="window.open('https://zok1.itch.io/boomerangbot')">Try it yourself</button>
-            <script>
+      <section id="skills" class="mb-5">
+        <h2>Skills</h2>
+        <ul>
+          <li>
+			<strong> Software Testing</strong>
+			<p>I’ve spent over 2.5 years diving into the world of software testing, where my main mission is to ensure applications. 
+			What I enjoy most about software testing is the mix of detective work and creativity—figuring out how to break things (in the best way possible!) and helping teams deliver polished, reliable applications. And whether it’s learning new tools or diving into a fresh challenge, I’m always ready to adapt and improve.
+			</p>
+		  </li>
+      
+		  <li>
+			<strong> Basic Software Development </strong>
+			<p>I have a background in computer science, having studied it at university, though I wasn’t able to complete my degree at the time due to circumstances that required me to start working. 
+			Despite this, my passion for technology and learning has only grown stronger over the years and im learning constantly through personal projects.
+			<p></p>
+			Now, with more experience and a clearer path ahead, I plan to finish my bachelor's degree in the near future.</p>
+		  </li>
+		  
+		  <li>
+			<strong> Game Developement </strong>
+			<p>I absolutely love using the Godot Game Engine to bring my personal game ideas to life.
+			Even if I don’t always finish my projects, each one teaches me something new and valuable.
+			<p></p>
+			What fascinates me about game development is how it brings together so many different elements—coding, design, storytelling, and problem-solving. 
+			It’s like a giant creative puzzle, and it perfectly matches my curious nature. 
+			Every project feels like an adventure, and I’m excited to see where my next idea will take me!</p>
+			
+				   <!-- Collapsible Projects -->
+			  <div class="accordion" id="gameDevProjects">
+				<div class="accordion-item">
+				  <h2 class="accordion-header" id="headingOne">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+					  72 Hour Gamejam
+					</button>
+				  </h2>
+				  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#gameDevProjects">
+					<div class="accordion-body">
+					  <p>Starting games? Easy. Finishing them? Well... that’s a different story. 
+					  During this 72-hour Game Jam, I somehow managed to plan, prototype, program, create the art, and design the levels. 
+					  It was a crash course in understanding everything that goes into making a game—and realizing that I definitely can’t do it all myself.
+					  The result? My first fully finished game.
+					  <p></p>
+					  If you enjoy frustrating level design, janky movement, and suboptimal art, you’re in luck—you can try it yourself! :)</p>
+					  <!-- Nested Accordion Inside "Game Development" -->
+				<div class="accordion mt-4" id="nestedGameDevProjects">
+				  <div class="accordion-item">
+					<h2 class="accordion-header" id="nestedHeadingOne">
+					  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapseOne" aria-expanded="false" aria-controls="nestedCollapseOne">
+						Gallery
+					  </button>
+					</h2>
+					<div id="nestedCollapseOne" class="accordion-collapse collapse" aria-labelledby="nestedHeadingOne" data-bs-parent="#nestedGameDevProjects">
+					  <div class="accordion-body">
+					  <img src="assets/brand/FirstIteration.gif" width="600" height="300" class="me-3" alt="Bootstrap">
+					<img src="assets/brand/FirstArt.gif" width="600" height="300" class="me-3" alt="Bootstrap">
+					<img src="assets/brand/BoomerangBotGif1.gif" width="600" height="300" class="me-3" alt="Bootstrap">
+					<img src="assets/brand/BoomerangBotGif2.gif" width="600" height="300" class="me-3" alt="Bootstrap">
+					  </div>
+					</div>
+				  </div>
+				  
+				</div>
+				<p></p>
+				<!-- End of Nested Accordion -->
+			  <button type="button" class="btn btn-primary btn-lg" onclick="window.open('https://zok1.itch.io/boomerangbot')">Try it yourself</button>
+            
+			
+			<script>
               function relocate_home() {
                 location.href = "https://zok1.itch.io/boomerangbot";
               }
             </script>
-            <p class="pt-2 pb-4 mb-4 border-bottom"></p>
+   
+            </div>
           </div>
-
-          <div>
-            <img src="assets/brand/HandyGame1.gif" width="250" height="400" class="me-3" alt="Bootstrap">
-            <img src="assets/brand/HandyGame2.gif" width="250" height="400" class="me-3" alt="Bootstrap">
-            <p class="pt-4 pb-4 mb-4 border-bottom">Mobile Games are an always growing market, which is why I tried to make one myself. <br>
-              A simple gameplay-loop and a responsive controller make for a relatively fun Game. <br>
-            </p>
-          </div>
-
-          <div>
-            <img src="assets/brand/EndlessRunnerTest.gif" width="400 " height="200" class="me-3" alt="Bootstrap">
-            <img src="assets/brand/RunningTemplate2.gif" width="400 " height="200" class="me-3" alt="Bootstrap">
-            <p class="pt-4 pb-4 mb-4 border-bottom">One of the most popular Genres when it comes to Mobile Games are Endless-Runners. <br>
-              It's not much, but a simple repeating terrain- and target-generation and statisfying shooting mechanic did the trick. <br>
-              Creating animations and art for my projects is also something I like to improve on - even if this one didn't make it into the game</p>
-          </div>
-          <div>
-            <img src="assets/brand/Minesweeper2D.gif" width="400 " height="200" class="me-3" alt="Bootstrap">
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              3D Minesweeper
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#gameDevProjects">
+            <div class="accordion-body">
+              <p>I've always been a big fan of puzzle games, and Minesweeper holds a special place in my heart — it's a game I still play almost daily. 
+			  Trying to recreate it with an added dimension was both a challenge and a joy. Translating the simplicity of the original into a 3D space brought new layers of strategy and complexity, making the process just as exciting as playing the game itself!</p>
+			  <!-- Nested Accordion -->
+      <div class="accordion mt-4" id="nestedMinesweeperDetails">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="nestedHeadingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapseTwo" aria-expanded="false" aria-controls="nestedCollapseOne">
+              Gallery
+            </button>
+          </h2>
+          <div id="nestedCollapseTwo" class="accordion-collapse collapse" aria-labelledby="nestedHeadingTwo" data-bs-parent="#nestedMinesweeperDetails">
+            <div class="accordion-body">
+              <img src="assets/brand/Minesweeper2D.gif" width="400 " height="200" class="me-3" alt="Bootstrap">
             <img src="assets/brand/Minesweeper3D-1.gif" width="400 " height="200" class="me-3" alt="Bootstrap">
             <img src="assets/brand/Minesweeper3D.gif" width="300 " height="300" class="me-3" alt="Bootstrap">
-            <p class="pt-4 pb-4 mb-4 border-bottom">I was always a big fan of Puzzle Games. <br>
-              Trying to recreate a game I play nearly daily up to this day with an additional dimension, is as much fun as playing the game itself.</p>
+            </div>
           </div>
         </div>
-      </article>
-
-      <!-- 3D Printing and CAD Design Projects Section -->
-      <article class="my-3" id="3d_printing">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-          <h3>3D Printing and CAD Design</h3>
-        </div>
-
-        <div>
-          <div>
-            <p class="pt-4 pb-4 mb-4">I recently discovered my passion for 3D printing and CAD design. <br>
-              Learning to create my own designs and bring them to life has been an incredibly rewarding experience. <br>
-              From functional objects to artistic pieces, the possibilities are endless.</p>
-            <p class="pt-2 pb-4 mb-4 border-bottom"></p>
+        
+      </div>
+      <!-- End of Nested Accordion -->
+            </div>
+			
           </div>
         </div>
-      </article>
-    </section>
-	
-	<!-- Other-->
-      <article class="my-3" id="other">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-          <h3>Other</h3>
-        </div>
-
-        <div>
-          <div>
-            <p class="pt-4 pb-4 mb-4">Besides that, I always try to learn new Technologies.I started learning HTML/CSS to make this Portfolio and I created the Backend of a Webshop with ShopWare5.</p>
-            <p class="pt-2 pb-4 mb-4 border-bottom"></p>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Other
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#gameDevProjects">
+            <div class="accordion-body">
+              <p>A collection of other projects, including animations, mobile controls, and more experiments.</p>
+			  <!-- Nested Accordion -->
+      <div class="accordion mt-4" id="nestedOtherProjects">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="nestedHeadingOneOther">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nestedCollapseOneOther" aria-expanded="false" aria-controls="nestedCollapseOneOther">
+              Gallery
+            </button>
+          </h2>
+          <div id="nestedCollapseOneOther" class="accordion-collapse collapse" aria-labelledby="nestedHeadingOneOther" data-bs-parent="#nestedOtherProjects">
+            <div class="accordion-body">
+			<p> Mobile controls </p>
+            <img src="assets/brand/HandyGame1.gif" width="250" height="400" class="me-3" alt="Bootstrap">
+            <img src="assets/brand/HandyGame2.gif" width="250" height="400" class="me-3" alt="Bootstrap">
+			<br>
+			<p> Procedural Generation</p>
+            <img src="assets/brand/EndlessRunnerTest.gif" width="400 " height="200" class="me-3" alt="Bootstrap">
+			<br>
+			<p> Animation</p>
+            <img src="assets/brand/RunningTemplate2.gif" width="400 " height="200" class="me-3" alt="Bootstrap">
+			</div>
           </div>
         </div>
-      </article>
-    </section>
-
-    <section id="content">
-      <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-3 pb-3 pb-xl-3">About Me</h2>
-      <article class="my-3" id="my_life">
-        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-          <h3>My Life</h3>
+       
+        
+      </div>
+      <!-- End of Nested Accordion -->
+            </div>
+          </div>
         </div>
-        <div>
-          <p class="pt-4 pb-4 mb-4 border-bottom">
-I studied computer science and worked full-time as a software tester, diving into the intricacies of software quality. Now, I'm thrilled to embark on a new journey, starting a university program in Robotics in September 2024.</p>
-        </div>
-      </article>
+      </div>
+    </li>
+		  </li>
+          <li>
+			<strong> CAD Software </strong>
+			<p>I’ve picked up the basics of CAD design, allowing me to create simple yet practical solutions for my household needs. 
+			It’s amazing how a few clicks and some creativity can turn an idea into a tangible object that solves everyday problems. 
+			It’s a skill I’m excited to keep building on! If you need a custom towel holder, write me!</p>
+		  </li>
  
-    </section>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, please feel free to reach out!</p>
+      </section>
+    </div>
   </div>
-
-  <!-- Bootstrap JavaScript and dependencies -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-
+</div>
 </body>
-
 </html>
